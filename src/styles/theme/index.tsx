@@ -1,4 +1,4 @@
-import { createTheme } from "@material-ui/system";
+import { createTheme } from "@mui/material/styles";
 import { pxToRem } from "../utils";
 import palette from "./palette";
 import shadows from "./shadows";

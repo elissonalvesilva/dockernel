@@ -1,4 +1,5 @@
 import { alpha } from '@mui/material/styles';
+import { Shadows } from '@mui/material/styles/shadows';
 
 import { smoke } from '../colors';
 import { pxToRem } from './../../utils';
@@ -15,7 +16,7 @@ import { pxToRem } from './../../utils';
 const shadow = (x = 0, y = 0, blur = 0, spread = 0, color: any) =>
   `${pxToRem(x)} ${pxToRem(y)} ${pxToRem(blur)} ${pxToRem(spread)} ${color}`;
 
-export default [
+const shadows: Shadows =  [
   'none',
   `
     ${shadow(0, 2, 1, -1, alpha(smoke['300'], 0.02))},
@@ -137,3 +138,6 @@ export default [
     ${shadow(0, 24, 38, 3, alpha(smoke['500'], 0.03))},
     ${shadow(0, 9, 46, 8, alpha(smoke['800'], 0.08))}`
 ];
+
+
+export default shadows;
